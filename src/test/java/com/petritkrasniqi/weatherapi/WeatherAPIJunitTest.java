@@ -10,6 +10,7 @@ import org.junit.jupiter.api.BeforeAll;
 
 import com.petritkrasniqi.weatherapi.data.SensorData;
 import com.petritkrasniqi.weatherapi.data.WeatherData;
+import com.petritkrasniqi.weatherapi.entity.Sensor;
 import com.petritkrasniqi.weatherapi.exception.BadRequestException;
 import com.petritkrasniqi.weatherapi.wrapper.WeatherDataWrapper;
 
@@ -71,6 +72,26 @@ public abstract class WeatherAPIJunitTest {
 		weather.setCreatedDate(createdDate);
 		
 		return weather;
+	}
+	
+	protected SensorData buildSensor(Long sensorId) {
+		SensorData sensor = new SensorData();
+		sensor.setSensorId(sensorId);
+		sensor.setCountry(COUNTRY);
+		sensor.setCity(CITY);
+
+		return sensor;
+
+	}
+	
+	protected static Sensor buildSensorEntity(Long sensorId) {
+		Sensor sensor = new Sensor();
+		sensor.setSensorId(sensorId);
+		sensor.setCountry(COUNTRY);
+		sensor.setCity(CITY);
+
+		return sensor;
+
 	}
 
 }

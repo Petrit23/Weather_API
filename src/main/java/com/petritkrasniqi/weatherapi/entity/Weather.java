@@ -4,6 +4,7 @@ import static java.util.Objects.isNull;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.Objects;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -42,7 +43,6 @@ public class Weather implements Serializable {
 
 	@Column(name = "windSpeed")
 	private Double windSpeed;
-	
 
 	public Long getId() {
 		return id;
@@ -91,7 +91,7 @@ public class Weather implements Serializable {
 	public void setWindSpeed(Double windSpeed) {
 		this.windSpeed = windSpeed;
 	}
-	
+
 	public WeatherData getData() {
 		WeatherData weatherData = new WeatherData();
 		weatherData.setId(id);
@@ -101,8 +101,24 @@ public class Weather implements Serializable {
 		weatherData.setTemperature(temperature);
 		weatherData.setHumidity(humidity);
 		weatherData.setWindSpeed(windSpeed);
-		
+
 		return weatherData;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(sensor, createdDate, temperature, humidity, windSpeed);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (obj instanceof Weather) {
+			Weather other = (Weather) obj;
+			return Objects.equals(sensor, other.sensor) && Objects.equals(createdDate, other.createdDate)
+					&& Objects.equals(temperature, other.temperature) && Objects.equals(humidity, other.humidity)
+					&& Objects.equals(windSpeed, other.windSpeed);
+		}
+		return false;
 	}
 
 }

@@ -3,6 +3,7 @@ package com.petritkrasniqi.weatherapi.entity;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -85,6 +86,20 @@ public class Sensor implements Serializable {
 		sensorData.setCity(city);
 
 		return sensorData;
+	}
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(sensorId, country, city);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (obj instanceof Sensor) {
+			Sensor other = (Sensor) obj;
+			return Objects.equals(sensorId, other.sensorId) && Objects.equals(country, other.country) && Objects.equals(city, other.city);
+		}
+		return false;
 	}
 
 }

@@ -66,14 +66,4 @@ public class SensorRepositoryTest extends WeatherAPIJunitTest {
 		});
 	}
 
-	private SensorData buildSensor(Long sensorId) {
-		SensorData sensor = new SensorData();
-		sensor.setSensorId(sensorId);
-		sensor.setCountry(COUNTRY);
-		sensor.setCity(CITY);
-
-		return sensor;
-
-	}
-
 }
