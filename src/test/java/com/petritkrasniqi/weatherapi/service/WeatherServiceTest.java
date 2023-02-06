@@ -56,9 +56,5 @@ public class WeatherServiceTest extends WeatherAPIJunitTest {
 		}
 
 	}
-	
-	private MetricsReportQuery.Builder queryBuilder() {
-		return new MetricsReportQuery.Builder();
-	}
 
 }
