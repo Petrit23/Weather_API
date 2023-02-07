@@ -20,7 +20,7 @@ Weather API built in Java using Spring boot that receives weather data from vari
 * Ensure you're using Java 1.8 and Maven version 3.6.3
 * Run mvn clean install to build project, install dependencies to get it ready for start up.
 * Navigate to WeatherapiApplication.java and run
-* On application startup, the databse is started and the data is loaded into the db based on the data.sql script. Tables are created based on entity definitions. When the server stops the database table instance is dropped.
+* On application startup, the database is started and the data is loaded into the db based on the data.sql script. Tables are created based on entity definitions. When the server stops the database table instance is dropped.
 * Once the application is running, the app should be available under the following URL: http://localhost:9090/api/
 * The in memory database is accessible under the following URL:
 http://localhost:9090/api/h2-console
