@@ -24,11 +24,11 @@ public class SensorService {
 
 		return isNullOrEmpty(sensorIds) ? findAll() : findBySensorId(sensorIds);
 	}
-	
+
 	private List<SensorData> findBySensorId(List<Long> sensorIds) {
 		return sensorRepository.findSensorsById(sensorIds).stream().map(Sensor::getData).collect(toList());
 	}
-	
+
 	private List<SensorData> findAll() {
 		return sensorRepository.findAll().stream().map(Sensor::getData).collect(toList());
 	}

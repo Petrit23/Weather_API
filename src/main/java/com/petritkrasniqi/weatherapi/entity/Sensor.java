@@ -87,7 +87,7 @@ public class Sensor implements Serializable {
 
 		return sensorData;
 	}
-	
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(sensorId, country, city);
@@ -97,7 +97,8 @@ public class Sensor implements Serializable {
 	public boolean equals(Object obj) {
 		if (obj instanceof Sensor) {
 			Sensor other = (Sensor) obj;
-			return Objects.equals(sensorId, other.sensorId) && Objects.equals(country, other.country) && Objects.equals(city, other.city);
+			return Objects.equals(sensorId, other.sensorId) && Objects.equals(country, other.country)
+					&& Objects.equals(city, other.city);
 		}
 		return false;
 	}
