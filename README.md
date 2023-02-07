@@ -27,6 +27,9 @@ http://localhost:9090/api/h2-console
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Code coverage
+<img width="896" alt="Screenshot 2023-02-07 at 21 57 19" src="https://user-images.githubusercontent.com/23060798/217376313-3ce5b9f1-edba-48f9-ba93-de5c1031114e.png">
+
 ## Endpoints Exposed
 
 ## API Health Check 
