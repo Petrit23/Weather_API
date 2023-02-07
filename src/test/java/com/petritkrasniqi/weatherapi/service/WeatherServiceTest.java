@@ -18,7 +18,6 @@ import com.petritkrasniqi.weatherapi.entity.Sensor;
 import com.petritkrasniqi.weatherapi.exception.BadRequestException;
 import com.petritkrasniqi.weatherapi.repository.SensorRepository;
 import com.petritkrasniqi.weatherapi.repository.WeatherRepository;
-import com.petritkrasniqi.weatherapi.rest.controller.MetricsReportQuery;
 
 @ExtendWith(MockitoExtension.class)
 public class WeatherServiceTest extends WeatherAPIJunitTest {

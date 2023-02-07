@@ -39,17 +39,5 @@ public class WeatherRepositoryTest extends WeatherAPIJunitTest {
 		});
 	}
 
-//	private WeatherData buildWeatherData() {
-//		WeatherData weather = new WeatherData();
-//		weather.setId(ID);
-//		weather.setSensorId(SENSOR_ID);
-//		weather.setSensor(sensor);
-//		weather.setCreatedDate(CREATED_DATE);
-//		weather.setTemperature(TEMPERATURE);
-//		weather.setHumidity(HUMIDITY);
-//		weather.setWindSpeed(WIND_SPEED);
-//
-//		return weather;
-//	}
 
 }
