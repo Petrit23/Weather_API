@@ -30,6 +30,8 @@ http://localhost:9090/api/h2-console
 ## Code coverage
 <img width="896" alt="Screenshot 2023-02-07 at 21 57 19" src="https://user-images.githubusercontent.com/23060798/217376313-3ce5b9f1-edba-48f9-ba93-de5c1031114e.png">
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## Endpoints Exposed
 
 ## API Health Check 
@@ -38,6 +40,9 @@ http://localhost:9090/api/h2-console
 Successful connection to WeatherAPI app
 
 ````
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## Sensor
 
 ### Register sensor - POST - http://localhost:8080/api/registerSensor
@@ -99,6 +104,8 @@ Sensor with the following details:
 ]
 ```
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## Weather
 ### Receive and record new weather data - POST - http://localhost:8080/api/weather
 ```
@@ -152,3 +159,5 @@ __GET - http://localhost:8080/api/metrics?sensorIds=1234&temperature=true&humidi
 ]
 ```
 Note, windspeed wasn't included in the response as this was not requested.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
